@@ -10,10 +10,21 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-color: var(--primary-color);
+  width: 100%;
+}
+
 nav {
   font-family: var(--heading-font-family);
   font-weight: bold;
-  background-color: var(--accent-color);
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #f48c06,
+    #e85a19,
+    #e43603
+  );
 }
 
 #hero {
@@ -61,14 +72,6 @@ a.nav-link.active {
   /* max-width: fit-content; */
 }
 
-.hero-info button {
-  margin-top: 60px;
-  font-size: 18px;
-  color: #fff;
-  background-color: var(--accent-color);
-  padding: 10px 20px 10px 20px;
-}
-
 .hero-info h1 {
   font-size: 80px;
   margin-top: 80px;
@@ -82,3 +85,45 @@ a.nav-link.active {
   float: right;
   margin: 0 20px 0 20px;
 } */
+
+.btn-hover {
+  width: 200px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  margin: 20px;
+  height: 55px;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:hover {
+  background-position: 100% 0;
+  moz-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-hover:focus {
+  outline: none;
+}
+
+.btn-hover.color {
+  background-image: linear-gradient(
+    to right,
+    #f5ce62,
+    #e43603,
+    #f48c06,
+    #e85a19
+  );
+  box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
