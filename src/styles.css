@@ -1,7 +1,7 @@
 :root {
   --heading-font-family: "Poltawski Nowy", serif;
   --default-font-family: "Poppins", sans-serif;
-  --primary-color: #18392b;
+  --primary-color: #072a2c;
   --accent-color: #f48c06;
   --text-color: #fff;
 }
@@ -27,11 +27,15 @@ nav {
   );
 }
 
-a.navbar-brand,
-a.nav-link,
-a.nav-link.active {
+a.navbar-brand {
   color: var(--primary-color);
   font-weight: bolder;
+}
+
+a.nav-link.active.active {
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  color: #fff;
 }
 
 a.nav-link:hover {
@@ -45,6 +49,23 @@ a.nav-link:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0 10%;
+}
+
+#bio h1 {
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+}
+
+#bio p {
+  color: var(--text-color);
+  font-family: var(--default-font-family);
+  font-size: 1rem;
+}
+
+#bio img {
+  border: 5px solid var(--accent-color);
+  box-shadow: 0 4px 15px 0 rgba(255, 255, 255, 0.75);
 }
 
 .logo {
@@ -133,4 +154,42 @@ a.nav-link:hover {
     #e85a19
   );
   box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+}
+
+/* Bio CSS */
+
+.bio-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(7, 42, 44);
+  background: linear-gradient(
+    118deg,
+    rgba(7, 42, 44, 1) 0%,
+    rgba(24, 74, 51, 1) 100%
+  );
+  padding-top: 30px;
+}
+
+@media (max-width: 767px) {
+  .bio-container .row h1 {
+    font-size: 2rem;
+  }
+
+  .bio-container .row p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .bio-container .row h1 {
+    font-size: 1.5rem;
+  }
+
+  .bio-container .row p {
+    font-size: 0.9rem;
+  }
+
+  /* .bio-container img {
+    width: 350px; 
+  }  */
 }
