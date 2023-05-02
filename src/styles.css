@@ -1,3 +1,5 @@
+/* Overall and nav CSS */
+
 :root {
   --heading-font-family: "Poltawski Nowy", serif;
   --default-font-family: "Poppins", sans-serif;
@@ -53,6 +55,8 @@ a.nav-link:hover {
   margin-right: 10px;
 }
 
+/* Hero CSS */
+
 .hero-bg-container {
   height: 100%;
   overflow: hidden;
@@ -66,14 +70,6 @@ a.nav-link:hover {
   height: 100%;
   object-fit: cover;
   z-index: -1;
-}
-
-.hero-img {
-  margin-top: 80px;
-  width: 300px;
-  border-radius: 50%;
-  border: 5px solid var(--accent-color);
-  box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.5);
 }
 
 .hero-info {
@@ -161,4 +157,28 @@ a.nav-link:hover {
     rgba(24, 74, 51, 1) 100%
   );
   padding-top: 30px;
+}
+
+/* Projects CSS */
+
+.projects-bg-container {
+  height: 100%;
+  overflow: hidden;
+}
+
+.projects-bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.projects-info {
+  font-family: var(--heading-font-family);
+  color: #fff;
+  text-align: center;
+  margin: 60px 20px 20px 20px;
 }
