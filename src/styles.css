@@ -193,3 +193,27 @@ a.nav-link:hover {
 .project-img {
   max-width: 200px;
 }
+
+/* Projects CSS */
+#certificates {
+  margin: 0;
+  background-size: cover;
+  background: rgb(7, 42, 44);
+  background: linear-gradient(
+    118deg,
+    rgba(7, 42, 44, 1) 0%,
+    rgba(24, 74, 51, 1) 100%
+  );
+}
+
+#certificates h1 {
+  color: #fff;
+  font-family: var(--heading-font-family);
+  font-size: 3rem;
+}
+
+#certificates p {
+  color: var(--text-color);
+  font-family: var(--default-font-family);
+  font-size: 1rem;
+}
