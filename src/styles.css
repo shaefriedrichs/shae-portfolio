@@ -208,7 +208,9 @@ button a {
 .projects-img p {
   color: var(--text-color);
 }
-/* Projects CSS */
+
+/* Certificates CSS */
+
 #certificates {
   margin: 0;
   background-size: cover;
